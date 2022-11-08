@@ -4,8 +4,8 @@ export default function AboutUs(props) {
 
   return (
     <div>
-        <div className="container" style={{backgroundColor : props.mode === 'light' ? '#f8f9fa' : '#071E3D', color : props.mode === 'light' ? '#071E3D' : '#ffffff'}}>
-            <h1 className="mb-4">About Us</h1>
+        <div className="container mt-5 pt-5" style={{backgroundColor : props.mode === 'light' ? '#f8f9fa' : '#071E3D', color : props.mode === 'light' ? '#071E3D' : '#ffffff'}}>
+            <h1 className="mb-4">About</h1>
             <div className="accordion" id="accordionExample" >
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">
