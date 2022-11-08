@@ -35,11 +35,11 @@ export default function TextForm(props) {
             <textarea className="form-control" style={{backgroundColor : props.mode === 'light' ? '#f8f9fa' : '#071E3D', color : props.mode === 'light' ? '#000000e6' : '#ffffff'}} onChange={handleOnChange} value={text} id="myBox" rows="10" placeholder="Type or paste your text here..."></textarea>
         </div>
         <div className="flex-start my-3">
-            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3`} onClick={handleUppercaseClick}>CONVERT TO UPPERCASE</button>
-            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3`} onClick={handleLowercaseClick}>convert to lowercase</button>
-            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3`} onClick={removeExtraSpaces}>Remove extra spaces</button>
-            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3`} onClick={handleCopyClick}>Copy to clipboard</button>
-            <button className="btn btn-danger me-3" onClick={handleClearClick}>Clear</button>
+            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3 my-2`} onClick={handleUppercaseClick}>CONVERT TO UPPERCASE</button>
+            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3 my-2`} onClick={handleLowercaseClick}>convert to lowercase</button>
+            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3 my-2`} onClick={removeExtraSpaces}>Remove extra spaces</button>
+            <button className={`btn btn-${props.mode === 'light' ? 'secondary' : 'light'} me-3 my-2`} onClick={handleCopyClick}>Copy to clipboard</button>
+            <button className="btn btn-danger me-3 my-2" onClick={handleClearClick}>Clear</button>
         </div>
         <div className="flex-start">
             <p>Character count : {text.length} | Word count : {text === "" ? 0 : text.split(" ").length} | Read time : {text === "" ? 0 : (0.008 * text.split(" ").length).toFixed(2)} minutes</p>
