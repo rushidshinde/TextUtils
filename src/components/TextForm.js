@@ -42,7 +42,7 @@ export default function TextForm(props) {
             <button className="btn btn-danger me-3 my-2" onClick={handleClearClick}>Clear</button>
         </div>
         <div className="flex-start">
-            <p>Character count : {text.length} | Word count : {text === "" ? 0 : text.split(" ").length} | Read time : {text === "" ? 0 : (0.008 * text.split(" ").length).toFixed(2)} minutes</p>
+            <p>Character count : {text.split("").filter((element)=>{return element !== " "}).length} | Word count : {text === "" ? 0 : text.split(" ").filter((element)=>{return element.length !== 0 }).length} | Read time : {text === "" ? 0 : (0.008 * text.split(" ").filter((element)=>{return element.length !== 0}).length).toFixed(2)} minutes</p>
         </div>
     </div>
   )
